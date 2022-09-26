@@ -1,6 +1,6 @@
 # ICAM
 
-This repository contains the implementation of **Importance sampling CAMs for Weakly-Supervised Segmentation with Highly Accurate Contours**, [arXiv](https://arxiv.org/pdf/2203.12459.pdf), 2022.
+This repository contains the implementation of **Importance Sampling CAMs for Weakly-Supervised Segmentation with Highly Accurate Contours**, [arXiv](https://arxiv.org/abs/2203.12459), 2022 \[1\].
 
 ## Abstract
 
@@ -44,23 +44,25 @@ Parameter configurations are handled by `argparse`. For the final stage, config 
 
 For training on multiple GPUs, update the `GPUS` field in the config file to match the number of available GPUs on your system.
 
-For training with the extended training setting from PMM \[4\], see [WSSS_MMSeg](https://github.com/Eli-YiLi/WSSS_MMSeg).
+For training with the extended training setting from PMM \[2\], see [WSSS_MMSeg](https://github.com/Eli-YiLi/WSSS_MMSeg).
 
 ## Acknowledgements
 
 This code was based on the following repositories:
-- [jiwoon-ahn/irn](https://github.com/jiwoon-ahn/irn) \[1\]
-- [YudeWang/SEAM](https://github.com/YudeWang/SEAM) \[2\]
-- [YudeWang/semantic-segmentation-codebase](https://github.com/YudeWang/semantic-segmentation-codebase) \[2\]
-- [davisvideochallenge/davis2017-evaluation](https://github.com/davisvideochallenge/davis2017-evaluation/) \[3\]
+- [jiwoon-ahn/irn](https://github.com/jiwoon-ahn/irn) \[3\]
+- [YudeWang/SEAM](https://github.com/YudeWang/SEAM) \[4\]
+- [YudeWang/semantic-segmentation-codebase](https://github.com/YudeWang/semantic-segmentation-codebase) \[4\]
+- [davisvideochallenge/davis2017-evaluation](https://github.com/davisvideochallenge/davis2017-evaluation/) \[5\]
 - [cocodataset/cocoapi](https://github.com/cocodataset/cocoapi)
 
 ## References
 
-\[1\] Jiwoon Ahn and Suha Kwak. Learning Pixel-Level Semantic Affinity with Image-Level Supervision for Weakly Supervised Semantic Segmentation. CVPR, 2018.
+\[1\] Arvi Jonnarth, Michael Felsberg, and Yushan Zhang. Importance Sampling CAMs for Weakly-Supervised Segmentation with Highly Accurate Contours. arXiv:2203.12459, 2022.
 
-\[2\] Yude Wang, Jie Zhang, Meina Kan, Shiguang Shan, and Xilin Chen. Self-Supervised Equivariant Attention Mechanism for Weakly Supervised Semantic Segmentation. CVPR, 2020.
+\[2\] Yi Li, Zhanghui Kuang, Liyang Liu, Yimin Chen, and Wayne Zhang. Pseudo-mask Matters in Weakly-supervised Semantic Segmentation. ICCV, 2021.
 
-\[3\] Federico Perazzi, Jordi Pont-Tuset, Brian McWilliams, Luc Van Gool, Markus Gross, and Alexander Sorkine-Hornung. A Benchmark Dataset and Evaluation Methodology for Video Object Segmentation. CVPR, 2016.
+\[3\] Jiwoon Ahn and Suha Kwak. Learning Pixel-Level Semantic Affinity with Image-Level Supervision for Weakly Supervised Semantic Segmentation. CVPR, 2018.
 
-\[4\] Yi Li, Zhanghui Kuang, Liyang Liu, Yimin Chen, and Wayne Zhang. Pseudo-mask Matters in Weakly-supervised Semantic Segmentation. ICCV, 2021.
+\[4\] Yude Wang, Jie Zhang, Meina Kan, Shiguang Shan, and Xilin Chen. Self-Supervised Equivariant Attention Mechanism for Weakly Supervised Semantic Segmentation. CVPR, 2020.
+
+\[5\] Federico Perazzi, Jordi Pont-Tuset, Brian McWilliams, Luc Van Gool, Markus Gross, and Alexander Sorkine-Hornung. A Benchmark Dataset and Evaluation Methodology for Video Object Segmentation. CVPR, 2016.
